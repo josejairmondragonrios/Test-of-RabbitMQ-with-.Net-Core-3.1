@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  rabbit-mq:
+    image: rabbitmq:3.7.27
+    container_name: rabbit-mq
+    ports:
+      - 4369:4369
+      - 5671:5671
+      - 5672:5672 ## interaction port
+      - 25672:25672
+      - 8080:15672
