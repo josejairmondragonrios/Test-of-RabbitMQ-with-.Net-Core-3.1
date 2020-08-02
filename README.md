@@ -20,10 +20,10 @@ docker-compose up -d
 cd Receive
 dotnet run
 ```
-    - Result:
+###### Result
 ```bash
-cd Receive
-dotnet run
+[*] Waiting for messages.
+ Press [enter] to exit.
 ```
 
 
@@ -32,5 +32,14 @@ dotnet run
 cd Send
 dotnet run
 ```
+###### Result
+```bash
+ [x] Sent Hello World!
+ Press [enter] to exit.
+```
 
-- Ready, 
+- Wait to RabbitMQ process the message in the Receive console.
+###### Result
+```bash
+ [x] Received Hello World!
+```
